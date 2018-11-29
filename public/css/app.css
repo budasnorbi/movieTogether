@@ -1,0 +1,105 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    color:#111111;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.upload__heading{
+    text-align: center;
+    font-size: 2.6rem;
+    letter-spacing: .1px;
+    margin:1rem 0;
+
+    background-color: #21D4FD;
+    background-image: linear-gradient(115deg, #21D4FD 0%, #B721FF 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.upload__label{
+    width: 90%;
+    display:block;
+
+    background-color: #FEE140;
+    background-image: linear-gradient(204deg, #FEE140 0%, #FA709A 100%);
+
+    border-image-slice: 1;
+    border-radius:5px;
+    text-align: center;
+    padding:2.5rem 0;
+    margin:.5rem auto;
+
+    font-size: 1.4rem;
+
+    color:white;
+    cursor: pointer;
+}
+
+.upload__btn{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.25rem;
+    background-color: transparent;
+    
+    border:dashed 1px #111111;
+    outline: none;
+    border-radius: 5px;
+    width:3.5rem;
+    height:3.5rem;
+
+    display: inline-block;
+    margin:.5rem calc((100% - 7rem) / 4);
+    justify-self: center;
+
+    cursor: pointer;
+    opacity: .85;
+    transition:  all .5s ease-in-out;
+}
+
+.upload__btn--upload{
+    background-image:url('./../images/upload.svg')
+}
+
+.upload__btn--reload{
+    background-image:url('./../images/reload.svg')
+}
+
+.upload__btn:hover{
+    border-radius: 50%;
+}
+
+.upload__input{
+    display:none
+}
+.upload__progress{
+    background-image: linear-gradient(115deg, #21D4FD 0%, #B721FF 100%);
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.movie{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.16), 0 4px 5px rgba(0,0,0,0.23);
+}
